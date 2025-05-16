@@ -1,0 +1,41 @@
+<div class="cadastro-container">
+  <h1>Cadastro</h1>
+  <form (ngSubmit)="cadastrar()">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" [(ngModel)]="email" name="email" required />
+    </div>
+    <div class="form-group">
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" [(ngModel)]="senha" name="senha" required />
+    </div>
+    <div class="form-group">
+      <label for="confirmarSenha">Confirmar Senha</label>
+      <input type="password" id="confirmarSenha" [(ngModel)]="confirmarSenha" name="confirmarSenha" required />
+    </div>
+    <div class="form-group">
+      <label for="cep">CEP</label>
+      <input type="text" id="cep" [(ngModel)]="cep" name="cep" (blur)="buscarEndereco()" required />
+    </div>
+    <div class="form-group">
+      <label for="rua">Rua</label>
+      <input type="text" id="rua" [(ngModel)]="rua" name="rua" required />
+    </div>
+    <div class="form-group">
+      <label for="bairro">Bairro</label>
+      <input type="text" id="bairro" [(ngModel)]="bairro" name="bairro" required />
+    </div>
+    <div class="form-group">
+      <label for="cidade">Cidade</label>
+      <input type="text" id="cidade" [(ngModel)]="cidade" name="cidade" required />
+    </div>
+    <div class="form-group">
+      <label for="estado">Estado</label>
+      <input type="text" id="estado" [(ngModel)]="estado" name="estado" required />
+    </div>
+    <button type="submit" class="btn">Cadastrar</button>
+  </form>
+  <p class="login-link">
+    Já tem uma conta? <a routerLink="/login">Login</a>
+  </p>
+</div>

@@ -1,0 +1,126 @@
+/* Estilo para o container do carrinho */
+.carrinho-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo para o título */
+h1 {
+  font-size: 2.5em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo para a lista de produtos */
+.produtos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Estilo para cada item do carrinho */
+.produto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para a imagem do produto */
+.produto-imagem {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+/* Estilo para os detalhes do produto */
+.produto-detalhes {
+  flex: 1;
+}
+
+.produto-nome {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.produto-preco {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Estilo para a seção de quantidade */
+.produto-quantidade {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.produto-quantidade button {
+  padding: 5px 10px;
+  font-size: 1.2em;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.produto-quantidade button:hover {
+  background-color: #ddd;
+}
+
+/* Estilo para o total do item */
+.produto-total {
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Estilo para o botão de remover */
+.remover-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remover-btn:hover {
+  background-color: #e53935;
+}
+
+/* Estilo para a seção do total do carrinho */
+.carrinho-total {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  border-top: 2px solid #ddd;
+  margin-top: 20px;
+}
+
+.carrinho-total p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.finalizar-btn {
+  background-color: #ff9800;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.finalizar-btn:hover {
+  background-color: #fb8c00;
+}

@@ -1,0 +1,42 @@
+/* src/app/home.component.css */
+.home-container {
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.promo-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.promo-card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.promo-card:hover {
+  transform: scale(1.05);
+}
+
+.promo-image {
+  width: 100%;
+  height: auto;
+}
+
+.promo-title {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  font-size: 1.1em;
+  text-align: center;
+}

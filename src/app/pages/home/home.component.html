@@ -1,0 +1,12 @@
+<!-- src/app/home.component.html -->
+<!-- src/app/home.component.html -->
+<div class="home-container">
+  <h1>Promoções Especiais</h1>
+  <div class="promo-gallery">
+    <div class="promo-card" *ngFor="let promo of promoImages">
+      <img [src]="promo.src" [alt]="promo.alt" class="promo-image" />
+      <div class="promo-title">{{ promo.title }}</div>
+    </div>
+  </div>
+</div>
+
