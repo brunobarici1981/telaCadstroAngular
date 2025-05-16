@@ -10,4 +10,6 @@ import { RouterLink, RouterModule } from '@angular/router';  // Importando o Rou
   templateUrl: './app.component.html',
   styleUrl:'app.component.css'// Mantendo o template em arquivo separado
 })
-export class AppComponent {}
+export class AppComponent {
+    title: any;
+}
